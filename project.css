@@ -63,6 +63,10 @@ html {
   height: 100vh;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: lightcyan;
   width: 100vw;
@@ -71,30 +75,30 @@ body {
   justify-content: center;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-
 .main {
   background-color: azure;
   width: 70vw;
   height: 100%;
+  background-image: url("assets/leaf-bgpicture.jpg");
+  background-size: cover;
   
 }
 
 .header {
-  background-color: aquamarine;
   height: calc(100% / 10 * 1.5);
+  
 }
 
 .index {
   background-color: beige;
+  opacity: 0.8;
   height: calc(100%/ 10 * 3.3);
 }
+  .main-text {
+    font-family: "Kaushan Script", Arial, serif;
+  }
 
 .choose {
-  background-color: rosybrown;
   display: flex;
   height: calc(100% / 10 * 4.5);
   width: 100%;
@@ -104,7 +108,8 @@ body {
 }
 
   .first {
-    background-color: lightpink;
+    background-image: url("assets/first.jpg");
+    background-size: cover;
     width: calc(100% / 3 - 7%);
     height: 80%;
     display: flex;
@@ -114,7 +119,8 @@ body {
   }
 
   .second {
-    background-color: mediumspringgreen;
+    background-image: url(assets/second.jpg);
+    background-size: cover;
     width: calc(100% / 3 - 7%);
     height: 80%;
     display: flex;
@@ -124,7 +130,8 @@ body {
   }
 
   .third {
-    background-color: aliceblue;
+    background-image: url(assets/third.jpg);
+    background-size: cover;
     width: calc(100% / 3 - 7%);
     height: 80%;
     display: flex;
@@ -135,6 +142,6 @@ body {
 
 
 .footer {
-  background-color: deepskyblue;
+  background-color: beige;
   height: calc(100%/ 10 * .7);
 }
