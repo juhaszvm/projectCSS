@@ -101,9 +101,11 @@ body {
   }
 
     .main-text {
+      color: brown;
       font-family: 'Kaushan Script';
       font-size: 2.5rem;
       padding: 1rem;
+      animation: welcome 30s linear 0s infinite alternate both;
     }
   
     .story {
@@ -171,4 +173,10 @@ body {
 .first:hover, .second:hover, .third:hover {
   transform: scale(1.1);
   filter: blur(2px) hue-rotate(100deg);
+}
+
+@keyframes welcome {
+  10% {color: yellowgreen};
+  50% {color: darkorange};
+  80% {color: orangered};
 }
