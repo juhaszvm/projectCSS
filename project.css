@@ -55,7 +55,6 @@ table {
 
 
 
-
 /*------
 *BASE STYLES
 */
@@ -81,7 +80,6 @@ body {
   height: 100%;
   background-image: url("assets/leaf-bgpicture.jpg");
   background-size: cover;
-  
 }
 
 .header {
@@ -93,15 +91,31 @@ body {
   background-color: beige;
   opacity: 0.8;
   height: calc(100%/ 10 * 3.3);
+  padding: calc(100% / 100 * 3);
 }
-  .main-text {
-    font-family: "Kaushan Script", Arial, serif;
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
+    .main-text {
+      font-family: 'Kaushan Script';
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
+  
+    .story {
+      font-family: 'Merriweather';
+    }
+
+
 .choose {
-  display: flex;
+  
   height: calc(100% / 10 * 4.5);
   width: 100%;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -116,6 +130,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: all .5s linear 0;
   }
 
   .second {
@@ -144,4 +159,16 @@ body {
 .footer {
   background-color: beige;
   height: calc(100%/ 10 * .7);
+}
+
+
+
+
+/*------
+*ANIMATION
+*/
+
+.first:hover, .second:hover, .third:hover {
+  transform: scale(1.1);
+  filter: blur(2px) hue-rotate(100deg);
 }
