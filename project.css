@@ -134,6 +134,14 @@ body {
     border-radius: 50%;
     transition: all .5s linear 0;
   }
+    .picturetext {
+      font-family: 'Kaushan Script';
+      color: darkred;
+      font-size: 2rem;
+      animation: picturetextup 10s linear 0s;
+     }
+   
+
 
   .second {
     background-image: url(assets/second.jpg);
@@ -181,8 +189,14 @@ body {
   filter: blur(1px) saturate(250%) drop-shadow(14px 14px 10px burlywood);
 }
 
+.picturetext:hover {
+  transform: scale(1.1);
+
+}
+
 @keyframes welcome {
   10% {color: burlywood};
   50% {color: darkorange};
   80% {color: orangered};
 }
+
