@@ -83,14 +83,14 @@ body {
 }
 
 .header {
-  height: calc(100% / 10 * 1.5);
+  height: calc(100% / 10 * 1.1);
   
 }
 
 .index {
   background-color: beige;
   opacity: 0.8;
-  height: calc(100%/ 10 * 3.3);
+  height: calc(100%/ 10 * 3.7);
   padding: calc(100% / 100 * 3);
 }
 
@@ -161,6 +161,12 @@ body {
 .footer {
   background-color: beige;
   height: calc(100%/ 10 * .7);
+  font-family: 'Kaushan Script';
+  font-size: .8rem;
+  color: darkorange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
