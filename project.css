@@ -67,7 +67,7 @@ html {
 }
 
 body {
-  background-color: lightcyan;
+  background-color: #FFEBCD;
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -103,9 +103,9 @@ body {
     .main-text {
       color: brown;
       font-family: 'Kaushan Script';
-      font-size: 2rem;
-      padding: 2rem;
-      animation: welcome 30s linear 0s infinite alternate both;
+      font-size: 3rem;
+      padding: 1.5rem;
+      animation: welcome 15s linear 0s infinite alternate both;
     }
   
     .story {
@@ -172,12 +172,11 @@ body {
 
 .first:hover, .second:hover, .third:hover {
   transform: scale(1.1);
-  filter: blur(2px) saturate(250%) drop-shadow(14px 14px 10px burlywood);
+  filter: blur(1px) saturate(250%) drop-shadow(14px 14px 10px burlywood);
 }
 
 @keyframes welcome {
   10% {color: burlywood};
   50% {color: darkorange};
   80% {color: orangered};
-  
 }
